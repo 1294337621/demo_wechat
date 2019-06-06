@@ -1,13 +1,43 @@
 <view>
-  <swiper>
+  <swiper indicator-dots="true" autoplay="true" circular="true">
     <swiper-item>
-      <image src='/images/1.jpg'></image>
+      <image src='/images/post/1.jpg'></image>
     </swiper-item>
     <swiper-item>
-      <image src='/images/2.jpg'></image>
+      <image src='/images/post/2.jpg'></image>
     </swiper-item>
     <swiper-item>
-      <image src='/images/3.jpg'></image>
+      <image src='/images/post/3.jpg'></image>
     </swiper-item>
   </swiper>
+  <view class='post-container'>
+    <view class='post-author-date'>
+      <image class='post-author' src='/images/post/avatar_1.jpg'></image>
+      <text class='post-date'>Nov 25 2016</text>
+    </view>
+    <text class='post-title'>直击顶峰礼包</text>
+    <image class='post-image' src='/images/post/content_1.jpg'></image>
+    <text class='post-content'>两个都是售价8888点劵，只能用点劵</text>
+    <view class='post-like'>
+      <image class='post-like-image' src='/images/post/shoucang.png'></image>
+      <text class='post-like-font'>66</text>
+      <image class='post-like-image' src='/images/post/pinlun.png'></image>
+      <text class='post-like-font'>66</text>
+    </view>
+  </view>
+  <view class='post-container'>
+    <view class='post-author-date'>
+      <image class='post-author' src='/images/post/avatar_1.jpg'></image>
+      <text class='post-date'>Nov 25 2016</text>
+    </view>
+    <text class='post-title'>直击顶峰礼包</text>
+    <image class='post-image' src='/images/post/content_1.jpg'></image>
+    <text class='post-content'>两个都是售价8888点劵，只能用点劵</text>
+    <view class='post-like'>
+      <image class='post-like-image' src='/images/post/shoucang.png'></image>
+      <text class='post-like-font'>66</text>
+      <image class='post-like-image' src='/images/post/pinlun.png'></image>
+      <text class='post-like-font'>66</text>
+    </view>
+  </view>
 </view>
