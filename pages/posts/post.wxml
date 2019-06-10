@@ -10,34 +10,21 @@
       <image src='/images/post/3.jpg'></image>
     </swiper-item>
   </swiper>
-  <view class='post-container'>
+  <block wx:for='{{post_content}}' wx:key>
+    <view class='post-container'>
     <view class='post-author-date'>
-      <image class='post-author' src='/images/post/avatar_1.jpg'></image>
-      <text class='post-date'>Nov 25 2016</text>
+      <image class='post-author' src='{{item.author_img}}'></image>
+      <text class='post-date'>{{item.date}}</text>
     </view>
-    <text class='post-title'>直击顶峰礼包</text>
-    <image class='post-image' src='/images/post/content_1.jpg'></image>
-    <text class='post-content'>两个都是售价8888点劵，只能用点劵</text>
+    <text class='post-title'>{{item.title}}</text>
+    <image class='post-image' src='{{item.post_img}}'></image>
+    <text class='post-content'>{{item.content}}</text>
     <view class='post-like'>
       <image class='post-like-image' src='/images/post/shoucang.png'></image>
-      <text class='post-like-font'>66</text>
+      <text class='post-like-font'>{{item.view_num}}</text>
       <image class='post-like-image' src='/images/post/pinlun.png'></image>
-      <text class='post-like-font'>66</text>
+      <text class='post-like-font'>{{item.collect_num}}</text>
     </view>
   </view>
-  <view class='post-container'>
-    <view class='post-author-date'>
-      <image class='post-author' src='/images/post/avatar_1.jpg'></image>
-      <text class='post-date'>Nov 25 2016</text>
-    </view>
-    <text class='post-title'>直击顶峰礼包</text>
-    <image class='post-image' src='/images/post/content_1.jpg'></image>
-    <text class='post-content'>两个都是售价8888点劵，只能用点劵</text>
-    <view class='post-like'>
-      <image class='post-like-image' src='/images/post/shoucang.png'></image>
-      <text class='post-like-font'>66</text>
-      <image class='post-like-image' src='/images/post/pinlun.png'></image>
-      <text class='post-like-font'>66</text>
-    </view>
-  </view>
+  </block>
 </view>
